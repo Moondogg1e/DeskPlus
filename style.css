@@ -1,0 +1,475 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;    
+    list-style: none;
+}
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h2{
+    font-size: 37px;
+    margin: 0;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #B1B6CA;
+}
+
+h4{
+    font-size: 18px;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+nav{
+    width: 100%;
+    max-width: 500px;
+}
+
+.nav_links{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 ;
+    
+}
+
+/* .nav_links li{
+    padding: 0 40px;
+} */
+
+a {
+	position: relative;
+	color: black; 
+	cursor: pointer;
+	line-height: 1;
+    text-decoration: none; 
+    font-size: 14px;
+}
+
+.nav_links a::after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 100%;
+	height: 2px;
+	background-color: #083C6E; 
+	content: "";
+    transition:  0.3s ease-out ; 
+    transform: scaleX(0);
+}
+
+.nice_underline::after{
+    display: block;
+	position: relative;
+	left: 0; 
+	width: 40%;
+	height: 6px;
+	background-color: #083C6E; 
+	content: "";
+    transition:  0.3s ease-out ; 
+    transform: scaleX(1);
+}
+
+.nice_center_underline::after{
+    display: block;
+	position: relative;
+	left: 0; 
+	width: 20%;
+	height: 6px;
+	background-color: #083C6E; 
+	content: "";
+    transition:  0.3s ease-out ; 
+    transform: scaleX(1);
+    margin: 0 auto;
+}
+
+a:hover{
+    color: #083C6E;
+}
+
+.nav_links a:hover::after{
+    transform: scaleX(1);    
+}
+
+.blue_btn{
+    max-width: 223px;
+    color: #ffffff;
+    background-color: #083C6E;
+    padding: 10px 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.first_section{
+    min-height: 846px;
+    background-image: url(../images/section1_back.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    display: flex;
+    flex-direction: column;
+}
+
+.good_living{
+    /* position: relative; */
+    max-width: 459px;
+    /* top: 200px; */
+    /* left: 245px; */
+    margin-top: 200px;
+    margin-left: 20%;
+    margin-right: 3%;
+}
+
+.input_group{
+    display: flex;
+    max-width: 436px;    
+    width: 100%;
+    height: 50px;
+}
+
+input[type="text"]{
+    width: 100%; 
+    max-width: 285px;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input_group .blue_btn{
+    padding: 0;
+    width: 138px;
+}
+
+
+/* Our Fave Kits */
+
+.fave_kits{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.fave_cards{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    flex-wrap: wrap;    
+}
+
+.fave_card{
+    max-height: 264px;
+    max-width: 357px;
+    margin: 10px 0;
+}
+
+.fave_card img{
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+/* .fave_card:hover img{
+    transform: scale(1.1);
+} */
+
+.fave_card .details{
+    max-width: 330px;
+    max-height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #083C6E;
+    opacity: 0.7;
+    color: #ffffff;
+    margin-top: -80px;
+    margin: -65px auto 0;
+}
+
+.fave_card h4{    
+    margin:  15px;
+    cursor: default;
+}
+
+.price{
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+/* Simple n Modern */
+
+
+.simple_n_modern{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+}
+
+.simple_n_modern_text{
+    display: flex;
+    flex-direction: column;
+    max-width: 448px;
+    /* max-height: 324px; */
+    width: 100%;
+    height: auto;
+    text-align: start; 
+}
+
+.simple_n_modern img{
+    display: block; 
+    max-width: 488px;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Just Img */
+
+.just_img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Advantages */
+
+.advantages_title{
+    max-width: 432px;
+    margin: 50px 100px;
+}
+
+.advantages_cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ad_card{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.ad_card h2{
+    white-space: nowrap;
+}
+
+.ad_card i{
+    color: #083C6E;  
+    margin: 10px; 
+}
+
+.circle_icon {
+    background: #fff;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Luxroom modern */
+
+.luxroom_modern{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 150px;
+}
+.luxroom_modern img{
+    width: 100%;
+    max-width: 487px;
+    height: auto;
+}
+
+.luxroom_modern_text{
+    max-width: 445px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Support Your Workspace */
+
+.support_workspace{
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    min-height: 426px; 
+    max-width: 1110px;
+    background-color: #F8F8F8;
+    margin: 0 auto -150px;
+    position: relative;
+    justify-content: center;
+    top: -200px;
+}
+
+.support_workspace h3{
+    max-width: 585px;
+    margin: 40px auto;
+}
+
+.support_workspace h1{
+    margin-top: 50px;
+    /* margin: 50px 4% 0; */
+}
+
+.input_subscribe{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; 
+    justify-content: center;
+    width: 100%;
+}
+
+input[type='email']{   
+    height: 60px;
+    max-width: 750px;
+    min-width: 100px;
+    width: 100%; 
+    border: 1px solid #075DB0;
+    padding: 0 20px;
+    font-size: 17px;
+    margin-left: 20%;
+    /* margin: 0 auto; */
+    /* margin-right: -50px;  */
+}
+
+.subscribe_btn{
+    display: block;
+    height: 50px;
+    position: relative;
+    right: 200px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #152242;
+    margin-top: 320px;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.footer_links a{
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.footer_links a::after{
+    display: block;
+	position: absolute;
+	left: 0; 
+	width: 100%;
+	height: 2px;
+	background-color: #B1B6CA; 
+	content: "";
+    transition:  0.3s ease-out ; 
+    transform: scaleX(0);
+}
+
+.footer_links a:hover{
+    color: #B1B6CA;
+}
+
+.footer_links a:hover::after{
+    transform: scaleX(1); 
+}
+
+.footer_links ul li:first-child a{
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+.footer_links ul li:first-child{
+    margin: 30px 0;
+}
+
+.footer_links ul li{
+    margin: 10px 0;
+}
+
+.social_links i{
+    margin: 0 10px;
+}
+
+i:hover{
+    color: #B1B6CA;
+}
+
+
+@media screen and (max-width: 900px){
+    .input_subscribe{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;    
+        width: 90vw;
+        justify-content: center; 
+        margin: 0 auto;
+    }
+
+    input[type='email']{
+        margin-left: 0;
+        max-width: 500px;
+    }
+
+    .subscribe_btn{
+        display: block;
+        position: initial;
+        margin: 10px auto; 
+    }
+
+    
+}
+
+@media screen and (max-width: 600px){
+    .ad_card{
+        flex-wrap: wrap;;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .nav_links a{
+        display: none;
+    }
+}
