@@ -121,7 +121,7 @@ a:hover{
 
 .first_section{
     min-height: 846px;
-    background-image: url(../images/section1_back.png);
+    background-image: url(images/section1_back.png);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
