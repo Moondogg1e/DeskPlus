@@ -32,8 +32,9 @@ h4{
 header{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 20px;
+    align-items: center; 
+    padding-top: 20px; 
+    margin: 0 20px; 
 }
 
 
@@ -131,7 +132,7 @@ a:hover{
     max-width: 223px;
     color: #ffffff;
     background-color: #083C6E;
-    padding: 10px 50px;
+    padding: 10px 40px;
     font-size: 18px;
     text-align: center;
 }
@@ -254,6 +255,7 @@ input[type="text"]{
     width: 100%;
     height: auto;
     text-align: start; 
+    margin-left: 5%;
 }
 
 .simple_n_modern img{
@@ -276,7 +278,7 @@ input[type="text"]{
 
 .advantages_title{
     max-width: 432px;
-    margin: 50px 100px;
+    margin: 50px 1% 50px 10%;
 }
 
 .advantages_cards{
@@ -335,6 +337,7 @@ input[type="text"]{
     max-width: 445px;
     width: 100%;
     margin-top: 20px;
+    margin-left: 5%;
 }
 
 
@@ -474,9 +477,16 @@ i:hover{
         display: block;
         position: initial;
         margin: 10px auto; 
-    }
+    }    
+}
 
-    
+@media (max-width: 400px){
+    h1, h2{
+         font-size: 30px
+    }
+    /* h2{
+        font-size: 30px
+    } */
 }
 
 @media screen and (max-width: 600px){
